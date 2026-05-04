@@ -1,0 +1,23 @@
+google renvoi une liste contenant l'intégralité du texte en position 0 puis chaque bloc de caractères (un bloc ~ 1 mot)
+trouvé dans le désordre. 
+
+Chaque élément de la liste est un objet contenant entre autre une string et les coordonnées de cette string
+
+
+
+
+LOGIQUE
+
+
+
+
+Cherche le bloc "l'abus"
+
+Cherche à partir de la position de "l'abus" n'importe quel autre mot de la mention
+    si je trouve un mot qui appartient à la mention 
+        SI OUI
+            je vérifie s'il est aligné avec la coordonnée Y de "l'abus"
+                SI NON => on set la valeur de ce mot dans le dico à FALSE => On passe au mot suivant
+                SI OUI => on set la valeur de ce mot dans le dico à TRUE => On passe au mot suivant
+        SI NON => On passe au mot suivant
+    

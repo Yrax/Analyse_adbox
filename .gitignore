@@ -1,0 +1,11 @@
+adbox-images/
+test-images/
+*node_modules
+*.env
+.tox
+*.pyc
+.idea
+*.iml
+.venv
+**/venv
+build/
